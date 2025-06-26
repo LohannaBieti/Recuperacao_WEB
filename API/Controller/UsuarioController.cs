@@ -55,7 +55,6 @@ public class UsuarioController : ControllerBase
         var claims = new[]
         {
             new Claim(ClaimTypes.Name, usuario.Email),
-            new Claim(ClaimTypes.Role, usuario.Permissao.ToString())
         };
 
         var chave = Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]!);

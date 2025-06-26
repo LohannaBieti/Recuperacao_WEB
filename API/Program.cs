@@ -30,9 +30,6 @@ builder.Services.AddDbContext<AppDataContext>
     ServerVersion.AutoDetect(connectionString)));
 builder.Services.
     AddScoped<IProdutoRepository, ProdutoRepository>();
-builder.Services.
-    AddScoped<IUsuarioRepository, UsuarioRepository>();
-
 var chaveJwt = builder.Configuration["JwtSettings:SecretKey"];
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -46,7 +43,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.Zero,
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(chaveJwt!))
+            Encoding.UTF8.GetBytes(chaveJwt!))
         };
     });
 

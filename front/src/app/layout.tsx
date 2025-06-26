@@ -19,7 +19,7 @@ export default function RootLayout({
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div">
-              Ecommerce
+              Recuperação Web Avançado
             </Typography>
           </Toolbar>
         </AppBar>
@@ -30,14 +30,6 @@ export default function RootLayout({
           {children}
         </Container>
         </Box>
-
-        {/* Rodapé */}
-        <Box component="footer" sx={{bgcolor: "#1976d2", color: "#fff", py: 2, textAlign: "center"}}>
-          <Typography variant="body2">
-            Desenvolvido por Lohanna Bieti Vieira
-          </Typography>
-        </Box>
-
       </body>
     </html>
   );
