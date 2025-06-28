@@ -15,7 +15,6 @@ public class UsuarioRepository : IUsuarioRepository
     {
         return _context.Usuarios.FirstOrDefault(x => x.Email == email); ;
     }
-
     public Usuario? BuscarUsuarioPorEmailSenha(string email, string senha)
     {
         Usuario? usuarioExistente = _context.Usuarios.FirstOrDefault
