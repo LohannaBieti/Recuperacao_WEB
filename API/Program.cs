@@ -1,4 +1,5 @@
 using System.Text;
+using API.Controllers;
 using API.Data;
 using API.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -28,8 +29,11 @@ var connectionString = builder.
 builder.Services.AddDbContext<AppDataContext>
     (options => options.UseMySql(connectionString,
     ServerVersion.AutoDetect(connectionString)));
-builder.Services.
-    AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddSingleton<IReceitaRepository, ReceitaRepository>();
+
+
 var chaveJwt = builder.Configuration["JwtSettings:SecretKey"];
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

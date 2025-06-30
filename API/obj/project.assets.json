@@ -2857,19 +2857,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\LOHANNABIETIVIEIRA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Recuperacao_WEB\\API\\API.csproj",
+      "projectUniqueName": "C:\\RECUPERAÇÃO\\Recuperacao_WEB\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\USER\\Desktop\\Recuperacao_WEB\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\Recuperacao_WEB\\API\\obj\\",
+      "projectPath": "C:\\RECUPERAÇÃO\\Recuperacao_WEB\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\LOHANNABIETIVIEIRA\\.nuget\\packages\\",
+      "outputPath": "C:\\RECUPERAÇÃO\\Recuperacao_WEB\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LOHANNABIETIVIEIRA\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2936,7 +2936,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
