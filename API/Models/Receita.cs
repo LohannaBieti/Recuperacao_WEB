@@ -1,12 +1,10 @@
-using System;
-
 namespace API.Models;
 
-public class Receita
+public class ReceitaFinanceira
 {
     public int Id { get; set; }
-    public string Nome { get; set; }
-    public string Ingredientes { get; set; }
-    public string ModoPreparo { get; set; }
-
+    public string Titulo { get; set; }
+    public decimal Valor { get; set; }
+    public DateTime Data { get; set; }
+    public string UsuarioId { get; set; }
 }
