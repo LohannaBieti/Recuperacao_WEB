@@ -1,0 +1,45 @@
+@url_base = http://localhost:5125/api/usuario
+
+# Testando GET: api/despesas
+GET {{url_base}}
+Authorization: Bearer <SeuTokenJWT>
+
+###
+
+# Testando GET: api/despesas/{id}
+GET {{url_base}}
+Authorization: Bearer <SeuTokenJWT>
+
+###
+
+# Testando POST: api/despesas
+POST {{url_base}}
+Authorization: Bearer <SeuTokenJWT>
+Content-Type: application/json
+
+{
+  "descricao": "Aluguel do mês",
+  "valor": 1500.00,
+  "dataPagamento": "2025-07-01T00:00:00"
+}
+
+###
+
+# Testando PUT: api/despesas/{id}
+PUT {{url_base}}
+Authorization: Bearer <SeuTokenJWT>
+Content-Type: application/json
+
+{
+  "id": 1,
+  "descricao": "Aluguel atualizado",
+  "valor": 1600.00,
+  "dataPagamento": "2025-07-01T00:00:00",
+  "usuarioId": "<SeuUserId>"
+}
+
+###
+
+# Testando DELETE: api/despesas/{id}
+DELETE {{url_base}}
+Authorization: Bearer <SeuTokenJWT>

@@ -31,7 +31,6 @@ builder.Services.AddDbContext<AppDataContext>
     ServerVersion.AutoDetect(connectionString)));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
-builder.Services.AddSingleton<IReceitaRepository, ReceitaRepository>();
 
 
 var chaveJwt = builder.Configuration["JwtSettings:SecretKey"];
