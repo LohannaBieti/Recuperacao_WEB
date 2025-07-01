@@ -26,8 +26,8 @@ function TabPanel(props: { children?: React.ReactNode; value: number; index: num
 
 export default function ReceitasDespesasPage() {
   const [value, setValue] = useState(0);
-  const [receitas, setReceitas] = useState<ReceitaDespesa[]>([]);
-  const [despesas, setDespesas] = useState<ReceitaDespesa[]>([]);
+  const [receitas, setReceitas] = useState<receitaDespesa[]>([]);
+  const [despesas, setDespesas] = useState<receitaDespesa[]>([]);
 
   const token = localStorage.getItem('token');
 
@@ -43,15 +43,15 @@ export default function ReceitasDespesasPage() {
     })
       .then(response => {
         const data = response.data;
-        setReceitas(data.filter((item: ReceitaDespesa) => item.isReceita));
-        setDespesas(data.filter((item: ReceitaDespesa) => !item.isReceita));
+        setReceitas(data.filter((item: receitaDespesa) => item.isReceita));
+        setDespesas(data.filter((item: receitaDespesa) => !item.isReceita));
       })
       .catch(error => {
         console.error('Erro ao carregar dados:', error);
       });
   }, []);
 
-  const renderList = (items: ReceitaDespesa[]) => (
+  const renderList = (items: receitaDespesa[]) => (
     <List>
       {items.map((item) => (
         <div key={item.id}>
